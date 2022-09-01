@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import logo from "../src/assets/logo.svg";
 
-function App() {
+export default function App() {
+  function convertBinToDec(event) {
+    event.preventDefault();
+    let arrayNumbers = valueInput.split("");
+    let aux = arrayNumbers.length - 1;
+    let decimal = 0;
+    for (let i = 0; arrayNumbers.length > i; i++) {
+      decimal += Number(arrayNumbers[i]) * 2 ** aux;
+      aux--;
+    }
+    setValueOutput(decimal);
+  }
+
+  const [valueInput, setValueInput] = useState();
+  const [valueOutput, setValueOutput] = useState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <img src={logo} alt="logo" />
+      <form onSubmit={convertBinToDec}>
+        <input
+          value={valueInput}
+          onChange={(event) => setValueInput(event.target.value)}
+        />
+        <input value={valueOutput} />
+        <p>{valueOutput}</p>
+        <button type="submit">Convert</button>
+      </form>
     </div>
   );
 }
-
-export default App;
