@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Bin2Dec
+<br/>
+<div align="center">
+  <img alt="Filter-next" src="https://github.com/gustavofbc/bin2dec/blob/main/src/assets/logo.svg"/>
+</div>
+<br/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#bulb-ideia">Ideia</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#wrench-instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#mortar_board-aprendizados">Aprendizados</a>&nbsp;&nbsp;&nbsp;
+</p>
 
-## Available Scripts
+### :bulb: Ideia
+O projeto em questão é um dos desafios do repositório [App ideas](https://github.com/florinpop17/app-ideas).
 
-In the project directory, you can run:
+**Tier:** 1-Beginner
 
-### `yarn start`
+Binary is the number system all digital computers are based on.
+Therefore it's important for developers to understand binary, or base 2,
+mathematics. The purpose of Bin2Dec is to provide practice and
+understanding of how binary calculations.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Bin2Dec allows the user to enter strings of up to 8 binary digits, 0's
+and 1's, in any sequence and then displays its decimal equivalent.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This challenge requires that the developer implementing it follow these
+constraints:
 
-### `yarn test`
+-   Arrays may not be used to contain the binary digits entered by the user
+-   Determining the decimal equivalent of a particular binary digit in the
+    sequence must be calculated using a single mathematical function, for
+    example the natural logarithm. It's up to you to figure out which function
+    to use.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## User Stories
 
-### `yarn build`
+-   [x] User can enter up to 8 binary digits in one input field
+-   [x] User must be notified if anything other than a 0 or 1 was entered
+-   [x] User views the results in a single output field containing the decimal (base 10) equivalent of the binary number that was entered
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Bonus features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   [x] User can enter a variable number of binary digits
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+<h4> Tecnologias utilizadas no projeto:</h4>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="center">
+    <img alt="HTML5" title="HTML5" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/base/html.png" width="75"/>
+    <img alt="CSS3" title="CSS3" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/base/css.png" width="75"/>
+    <img alt="JAVASCRIPT" title="JAVASCRIPT" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/base/javascript.png" width="75"/>
+    <img alt="REACT" title="REACT" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/base/react.png" width="75"/>
+    <img alt="TYPESCRIPT" title="TYPESCRIPT" src="https://github.com/gustavofbc/pixel_of_shields/blob/main/base/typescript.png" width="75"/>
+</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<hr/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<p align="center">
+  <img alt="Interface" src="https://github.com/gustavofbc/bin2dec/blob/main/src/assets/bin2dec-interface.png"/>
+</p>
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### :wrench: Instalação
 
-### Code Splitting
+Instale o Bin2Dec com Yarn:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Na pasta de sua escolha clone o projeto via git com o comando:
+```
+git clone git@github.com:gustavofbc/bin2dec.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+No diretório do projeto instale suas dependências executando o comando:
+```
+yarn install
+```
 
-### Making a Progressive Web App
+Para executar o projeto abra a pasta em que este se encontra e execute o comando:
+```
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### :mortar_board: Aprendizados
 
-### Advanced Configuration
+-> Maior compreensão da estrutura de projetos criados com create-react-app com typescript instalado posteriormente (react-app-env.d, tsconfig);
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-> Implementação na prática de Hooks (useState);
 
-### Deployment
+-> Prática com Styled-Components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Autor
 
-### `yarn build` fails to minify
+- [Gustavo Felipe](https://github.com/gustavofbc)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
