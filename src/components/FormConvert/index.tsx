@@ -26,11 +26,12 @@ export function FormConvert() {
                     type='number'
                     value={valueInput}
                     placeholder="Digite o valor em binário (0 e 1):"
-                    onChange={(event) => setValueInput(event.target.value)}
+                    onChange={(event) => setValueInput(event.target.value.replace(/[2-9]/g, '').replace('e', ''))}
+                    required
                 />
 
                 <button type="submit">Converter</button>
-                <p>{Number(valueOutput)}</p>
+                <p>{valueOutput === '' ? "O valor em decimal aparecerá aqui" : Number(valueOutput)}</p>
 
             </Content>
         </Container>

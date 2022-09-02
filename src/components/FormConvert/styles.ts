@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-export const Container = styled.form`
-    height: 100vh;
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
     
+    padding: 1rem;
     background: #2E384D;
 
     img {
@@ -15,7 +17,7 @@ export const Container = styled.form`
     }
 `
 
-export const Content = styled.div`
+export const Content = styled.form`
     display: flex;
     align-items: center;
     flex-direction: column;

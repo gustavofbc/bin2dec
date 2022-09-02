@@ -42,4 +42,19 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+
+  main {
+    height: 100vh;
+    background: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  a {
+    text-decoration: none;
+  }
 `;
